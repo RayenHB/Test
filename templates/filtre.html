@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+{% block head %}
+<link rel="stylesheet" href="../static/style.css" />
+<title>Filtre</title>
+
+{% endblock %}
+
+{% block main %}
+<style>
+    body {
+        background: url(../static/img/green\ background.jpg);
+    }
+</style>
+<form class="form" action="/filtre" method="POST">
+    <p class="title">Filter </p>
+
+    <p>Edible</p>
+    <label class="switch" name="edit">
+        <input type="checkbox" name="edit" value="1">
+        <span class="slider"></span>
+    </label>
+
+
+    <p>Poisonous </p>
+    <label class="switch" name="poisonous">
+        <input type="checkbox" name="poisonous" value="1">
+        <span class="slider"></span>
+    </label>
+
+    <p>Indoor </p>
+    <label class="switch" name="indoor">
+        <input type="checkbox" name="indoor" value="1">
+        <span class="slider"></span>
+    </label>
+
+
+
+    <p>Cycle</p>
+    <div class="radio-inputs">
+        <label class="radio" name="cycle">
+            <input type="radio" value="perennial" name="cycle" checked="">
+            <span class="name">Perennial</span>
+        </label>
+        <label class="radio" name="cycle">
+            <input type="radio" value="annual" name="cycle">
+            <span class="name">Annual</span>
+        </label>
+
+        <label class="radio" name="cycle">
+            <input type="radio" value="biennial" name="cycle">
+            <span class="name">Biennial</span>
+        </label>
+
+        <label class="radio" name="cycle">
+            <input type="radio" value="biannual" name="cycle">
+            <span class="name">Biannual</span>
+        </label>
+    </div>
+
+
+
+    <p>Watering </p>
+    <div class="radio-inputs">
+        <label class="radio" name="water">
+            <input type="radio" value="frequent" name="water" checked="">
+            <span class="name">Frequent</span>
+        </label>
+        <label class="radio">
+            <input type="radio" value="average" name="water">
+            <span class="name">Average</span>
+        </label>
+
+        <label class="radio" name="water">
+            <input type="radio" value="minimum" name="water">
+            <span class="name">Minimum</span>
+        </label>
+    </div>
+
+
+    <p>Sunlight </p>
+    <div class="radio-inputs" name="sunlight">
+        <label class="radio">
+            <input type="radio" value="full_shade" name="sunlight" checked="">
+            <span class="name">Full shade</span>
+        </label>
+        <label class="radio" name="sunlight">
+            <input type="radio" value="part_shade" name="sunlight">
+            <span class="name">Part shade</span>
+        </label>
+
+        <label class="radio" name="sunlight">
+            <input type="radio" value="sun-part_shade" name="sunlight">
+            <span class="name">Sun part shade</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="full_sun" name="sunlight">
+            <span class="name">Full sun</span>
+        </label>
+    </div>
+
+
+    <p>Hardiness</p>
+    <div class="radio-inputs">
+        <label class="radio" name="hardiness">
+            <input type="radio" value="1" name="hardiness" checked="">
+            <span class="name">1</span>
+        </label>
+        <label class="radio" name="hardiness">
+            <input type="radio" value="2" name="hardiness">
+            <span class="name">2</span>
+        </label>
+
+        <label class="radio" name="hardiness">
+            <input type="radio" value="3" name="hardiness">
+            <span class="name">3</span>
+        </label>
+
+        <label class="radio" name="hardiness">
+            <input type="radio" value="4" name="hardiness">
+            <span class="name">4</span>
+        </label>
+
+        <label class="radio" name="hardiness">
+            <input type="radio" value="5" name="hardiness">
+            <span class="name">5</span>
+
+        </label>
+
+        <label class="radio" name="hardiness">
+            <input type="radio" value="6" name="hardiness">
+            <span class="name">6</span>
+        </label>
+
+        <label class="radio" name="hardiness">
+            <input type="radio" value="7" name="hardiness">
+            <span class="name">7</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="8" name="hardiness">
+            <span class="name">8</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="9" name="hardiness">
+            <span class="name">9</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="10" name="hardiness">
+            <span class="name">10</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="11" name="hardiness">
+            <span class="name">11</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="12" name="hardiness">
+            <span class="name">12</span>
+        </label>
+
+        <label class="radio">
+            <input type="radio" value="13" name="hardiness">
+            <span class="name">13</span>
+        </label>
+    </div>
+    <br>
+    <button class="submit">Submit</button>
+
+</form>
+{% endblock %}

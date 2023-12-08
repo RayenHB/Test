@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block head %}
+<link rel="stylesheet" href="../static/style.css" />
+<title>Register</title>
+
+{% endblock %}
+
+{% block main %}
+<style>
+    body {
+      background: url(../static/img/green\ background.jpg);
+    }
+</style>
+<form class="form" action="/register" method="POST">
+    <p class="title">Register </p>
+        <div class="flex">
+        <label>
+            <input required="" placeholder="" type="text" class="input" name="name">
+            <span>Firstname</span>
+        </label>
+
+        <label>
+            <input required="" placeholder="" type="text" class="input" name="last_name">
+            <span>Lastname</span>
+        </label>
+    </div>  
+    <label>
+        <input required="" placeholder="" type="text" class="input" name="username">
+        <span>Lastname</span>
+    </label>
+    <label>
+        <input required="" placeholder="" type="email" class="input" name="email">
+        <span>Email</span>
+    </label> 
+        
+    <label>
+        <input required="" placeholder="" type="password" class="input" name="password">
+        <span>Password</span>
+    </label>
+    <label>
+        <input required="" placeholder="" type="password" class="input" name="confirmation">
+        <span>Confirm password</span>
+    </label>
+    <button class="submit">Submit</button>
+    <p class="signin">Already have an acount ? <a href="/login">Signin</a> </p>
+</form>
+{% endblock %}

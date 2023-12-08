@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block head %}
+<link rel="stylesheet" href="../static/style.css" />
+<title>results</title>
+
+{% endblock %}
+{% block main %}
+<div class="search">
+	<hr class="hr">
+	<div class="results">
+		<div class="container">
+			<div class="row">
+				{% for plant in data %}
+				<div class="card66 col-3" >
+					<div class="image"><img src={{ plant.default_image.thumbnail }}></div>
+					<span class="title6">Watering: {{ plant.watering }}</span>
+					<span class="price">Name: {{ plant.common_name }}</span>
+				</div>
+				{% endfor %}
+			</div>
+			
+		</div>
+	
+	</div>
+	
+</div>
+
+
+
+{% endblock %}
