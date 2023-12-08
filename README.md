@@ -1,11 +1,11 @@
-Used libraries: 
-from cs50 import SQL
-from flask import Flask, flash, redirect, render_template, request, session, jsonify
-from flask_session import Session
-from tempfile import mkdtemp
-from werkzeug.security import check_password_hash, generate_password_hash
-from helpers import apology, login_required
+Used libraries:<br />
+from cs50 import SQL<br />
+from flask import Flask, flash, redirect, render_template, request, session, jsonify<br />
+from flask_session import Session<br />
+from tempfile import mkdtemp<br />
+from werkzeug.security import check_password_hash, generate_password_hash<br />
+from helpers import apology, login_required<br />
 
-import requests
-import sqlite3
-from datetime import datetime, timedelta
+import requests<br />
+import sqlite3 <br />
+from datetime import datetime, timedelta <br />
